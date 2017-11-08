@@ -1,0 +1,241 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: futura, sans-serif;
+  transition: 20s
+}
+svg{
+}
+nav{
+  position: absolute;
+  top:72vh;
+  left:50vw;
+  width: 40vh;
+  font-size: 4vh;
+  margin-left: 0vw;
+  color:white;
+  position: absolute;
+  transition: .5s;
+  z-index: 999;
+  -ms-transform: rotate(-30deg); /* IE 9 */
+   -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+   transform: rotate(-30deg);
+}
+.animate {
+opacity: 0;
+animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation-fill-mode: forwards;
+width: auto;
+height: 95vh;
+}
+.animate2 {
+opacity: 0;
+animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation-fill-mode: forwards;
+}
+
+/*.group:hover *{
+  stroke:red;
+}*/
+a{
+
+}
+.tesla:hover{
+  stroke:#666;
+  cursor: pointer;
+}
+.watson:hover{
+  animation: colors 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+  stroke:purple;
+
+
+}
+.sound:hover{
+  animation: colorsS 1.75s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+  stroke:#8afffe;
+
+  cursor: pointer;
+
+}
+.vimeo:hover{
+  stroke:#44c536;
+  cursor: pointer;
+
+
+}
+.old:hover{
+  stroke:red;
+  cursor: pointer;
+
+
+
+}
+.mock:hover{
+  stroke:#e9e9de;
+  cursor: pointer;
+
+}
+.animatedelay{
+  opacity: 0;
+
+  animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+  animation-delay:.2s;
+}
+.animatehex{
+opacity: 0;
+animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation-fill-mode: forwards;
+}
+.animateheart{
+opacity: 0;
+animation: dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation-fill-mode: forwards;
+width: auto;
+animation-delay:.5s;
+height: 20%;
+}
+.background{
+  animation: fadeblack 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+}
+@keyframes fadeblack{
+  0% {
+    background-color: white
+  }
+  100%{
+    background-color: black;
+  }
+}
+@keyframes colors {
+
+  0% {
+    stroke: green;
+  }
+  25% {
+    stroke: yellow;
+  }
+  50% {
+    stroke: blue;
+  }
+  75% {
+    stroke: red;
+  }
+  100% {
+    stroke: purple;
+  }
+}
+@keyframes colorsS {
+
+  0% {
+    stroke: #5710b6;
+  }
+  50% {
+    stroke: #4759db;
+  }
+  100% {
+    stroke: #8afffe;
+  }
+
+}
+@keyframes dash {
+0% {
+opacity: 1;
+stroke-dasharray: 2000;
+stroke-dashoffset: 2000;
+}
+50% {
+opacity: 1;
+stroke-dasharray: 1000;
+stroke-dashoffset: 5;
+}
+100% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 0;
+}
+}
+@keyframes dash2 {
+0% {
+opacity: 1;
+stroke-dasharray: 10;
+stroke-dashoffset: 100;
+}
+50% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 5;
+}
+100% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 0;
+}
+}
+@media screen and (max-width: 600px) {
+  .animate{
+    width: 95vw;
+  height: auto;
+}
+body{
+  background-color: black;
+}
+nav{
+  position: relative;
+  top:80vh;
+  left:0;
+  width: 100vw;
+align-items: center;
+ text-align: center;
+  margin-left: 0vw;
+  color:white;
+  position: absolute;
+  transition: .5s;
+  z-index: 999;
+  -ms-transform: rotate(0deg); /* IE 9 */
+   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+   transform: rotate(0deg);
+}
+/*.tesla{
+  stroke:#666
+}
+.tesla:hover{
+  stroke:#666;
+}
+.watson{
+  animation: colors 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  stroke:purple;
+}
+.watson:hover{
+  animation: none;
+  stroke:purple;
+}
+.sound{
+  animation: colorsS 1.75s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  stroke:#8afffe;
+}
+.sound:hover{
+  animation: none;
+  stroke:#8afffe;
+}
+.vimeo{
+  stroke:#44c536
+}
+.vimeo:hover{
+  stroke:#44c536;
+}
+.mock{
+  stroke:#e9e9de
+}
+.mock:hover{
+  stroke:#e9e9de;
+}*/
+
+}

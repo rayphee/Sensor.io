@@ -1,0 +1,188 @@
+body {
+    font-family: Helvetica;
+    font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+}
+h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 18px;
+}
+p{
+    font-weight: 100;
+}
+.spacer{
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+@keyframes signalpulsate {
+    100% {opacity:0;}
+}
+@keyframes signalpulsatesource {
+    65% {opacity:1;}
+    100% {opacity:0;}
+}
+.signal{
+    fill: #6BC2D6; 
+    stroke: #34679A; 
+    stroke-width: 2; 
+    stroke-miterlimit: 10;
+}
+.signal-group path{
+    transition: stroke 1s, fill 1s;
+}
+.signal-group:hover path{
+    fill: #AAAAAA; 
+    stroke: #888888; 
+}
+.signal-outer{
+    animation: signalpulsate 1s ease infinite;
+    animation-delay:.4s;
+}
+.signal-middle{
+    animation: signalpulsate 1s ease infinite;
+    animation-delay: .3s;
+}
+.signal-inner{
+    animation: signalpulsate 1s ease infinite;
+    animation-delay: .2s;
+}
+.signal-source{
+    animation: signalpulsatesource 1s ease infinite;
+}
+.button{
+    cursor:pointer;
+    background-color:white;
+    text-align:center;
+    text-decoration:none;
+    border: 1.5px solid;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 15px;
+  	transition:background-color .25s ease-out, color .25s ease-out;
+}
+#power-down{
+    color:rgb(180,15,0);
+    border-color:rgba(180,15,0,1);
+}
+#power-down:hover{
+    background-color:rgba(180,15,0,1);
+    color: white;
+}
+#power-cycle{
+    color:rgb(15,180,0);
+    border-color:rgb(15,180,0);
+}
+#power-cycle:hover{
+    background-color:rgb(15,180,0);
+    color:white;
+}
+#title-break {
+    width: 75%;
+    border-width: 0.5px;
+    border-color: black;
+}
+
+.content {
+    width: 960px;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content div {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+#power-options{
+    width:25%;
+    float:left;
+}
+#power-options div{
+    margin-top: 65px;
+}
+#data-options{
+    width:74%;
+    float:left;
+    height: 700px; 
+    text-align: center;
+    border-left:1px solid black;
+}
+#date-range12-container{
+    display:block;
+    width:453px;
+}
+.data-refiner{
+    margin-top: 15px;
+}
+label > input{
+    visibility: hidden;
+    position: absolute;
+}
+label > input + div{
+    cursor:pointer;
+    border:1px solid rgb(180,180,180);
+  	transition:border-color .25s ease-out;
+}
+label > input:checked + div{
+    border:1px solid rgb(31,158,99);
+}
+label > input:checked + div h1{
+    color:rgb(31,158,99);
+}
+label > input:checked + div .band{
+    background-color: rgb(31,158,99);
+}
+#bars div {
+  display: inline-block;
+  width: 1vw;
+  margin-right: .375vw;
+transition:width .25s ease-out;
+}
+.data-type{
+    vertical-align: top;
+    width:40%;
+    padding:15px;
+}
+#bars div:hover{
+	width: 2vw;
+}
+
+.emphasis {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 75px;
+}
+
+#nodes{
+    height:500px;
+    width:100%;
+}
+
+circle {
+  fill: rgb(0, 185, 255);
+    transition:r .15s ease-out;
+}
+
+circle:hover{
+	r:12;
+}
+
+text {
+  text-anchor: middle;
+  color: rgb(34, 34,r 34);
+  font-size: 12px;
+}

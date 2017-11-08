@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="dist/daterangepicker.min.css">
+        <script type="text/javascript" src="moment.min.js"></script>
+        <script type="text/javascript" src="dist/jquery.daterangepicker.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+        <script src="js/mainscript.js"></script>
+        <title>Port Authority Bus Terminal Dashboard</title>
+    </head>
+    <body>
+        <h1>Port Authority Bus Terminal Dashboard</h1>
+        <hr id="title-break">
+        <div class="content">
+            <h2>Select a sensor to access its dashboard</h2><br>
+            <div id="" style="position:relative;display:block;">
+                <object type="image/svg+xml" data="images/all-floors.svg" style="size:cover;width:70%;position:relative;"></object>
+            </div><br>
+        </div>
+        <hr id="title-break">
+        <div class="content">
+            <h2>Sensor dashboard</h2>
+            <div id="power-options">
+                <h2>Power Options</h2>
+                <div class="button" id="power-down">
+                    Power Down
+                </div><br>
+                <div class="button" id="power-cycle">
+                    Power Cycle
+                </div><br>
+            </div>
+            <div id="data-options">
+                <h2>Data</h2>
+                <form>
+                    <input id="date-picker" type="date" style="margin-bottom:15px;">
+                        <div id="date-range12-container">
+
+                        </div>
+                    <div class="data-refiner">
+                        <label>
+                            <input type="radio" name="average-range" value="average" id="group"/>
+                                <div class="data-type">
+                                    <h2>Daily Averages</h2>
+                                    <hr class="band">
+                                    <p>Daily Averages displays the average number of devices detected every day for the selected date range in 15 minute intervals.</p>
+                                </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="average-range" value="range" id="individual"/>
+                                <div class="data-type">
+                                    <h2>Range Data</h2>
+                                    <hr class="band">
+                                    <p>Range data is the total number of devices detected at set periods for the selected date range. You can choose between 15 minute or 30 minute intervals. </p>
+                                    <input type="radio" name="program" value="group" id="group"/>
+                                        15 minute intervals<br>
+                                    <input type="radio" name="program" value="group" id="group"/>
+                                        30 minute intervals
+                                </div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+        <hr id="title-break">
+        <div class="content">
+            <div id="bars">
+                
+            </div>
+            <div class="half">
+                <svg id="nodes"></svg>
+            </div>
+            <div class="half" style="height: 500px; text-align: center; padding-top:125px;">
+                <span class="emphasis" id="users" style="">433</span><br> unique users<br><br>
+                <span class="emphasis" id="address" style="">N/A</span><br>
+                MAC Address
+            </div><br>
+        </div>
+    </body>
+</html>

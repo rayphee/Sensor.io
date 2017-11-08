@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+        <script src="js/mainscript.js"></script>
+        <title>Port Authority Bus Terminal Dashboard</title>
+    </head>
+    <body>
+        <h1>Port Authority Bus Terminal Dashboard</h1>
+        <hr id="title-break">
+        <div class="content">
+            <!-- //for implementation after continuity can be implemented
+            <input type="range" value="Submit">
+            -->
+            <h2>Select a sensor to view the data it collected</h2><br>
+            <div id="" style="position:relative;display:block;">
+                <object type="image/svg+xml" data="images/all-floors.svg" style="size:cover;width:70%;position:relative;"></object>
+            </div><br>
+            <div class="half">
+                <svg id="nodes"></svg>
+            </div>
+            <div class="half" style="height: 500px; text-align: center; padding-top:125px;">
+                <span class="emphasis" id="users" style="">433</span><br> unique users<br><br>
+                <span class="emphasis" id="address" style="">N/A</span><br>
+                MAC Address
+            </div><br>
+        </div>
+    </body>
+</html>
